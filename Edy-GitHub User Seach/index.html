@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js" defer></script>
+
+    <title>GitHub user search app</title>
+  </head>
+  <body class="flex-column">
+    <nav class="flex-row nav-wrapper">
+      <p class="nav-logo">devfinder</p>
+      <div class="nav__theme--selector">
+        <div class="light-theme flex-row">
+          <p>Dark</p>
+          <img src="./assets/icon-moon.svg" alt="dark_mode" />
+        </div>
+        <div class="dark-theme hidden">
+          <p>Light</p>
+          <img src="./assets/icon-sun.svg" alt="light_mode" />
+        </div>
+      </div>
+    </nav>
+
+    <section class="search-container">
+      <img src="./assets/icon-search.svg" alt="search_icon" />
+      <input
+        class="search-container__input"
+        type="text"
+        placeholder="Search GitHub user..."
+      />
+      <button class="search-container__button">Search</button>
+    </section>
+
+    <main>
+      <section class="main-left">
+        <div class="image-wrapper"></div>
+      </section>
+      <section class="main-right flex-column">
+        <div class="main-right__header"></div>
+        <div class="header__title flex-row flex-gap-xlarge margin-top-xlarge">
+          <div class="header__title_username">
+            <p class="username__title">The Octocat</p>
+            <p class="username__link">@octocat</p>
+          </div>
+          <div class="header__title_date">
+            <p class="header_date">Joined 25 Jan 2011</p>
+          </div>
+        </div>
+
+        <p class="header__user__bio margin-top-xlarge">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A, sequi!
+          Rem, est et voluptatem quod illo numquam impedit, veritatis
+          consectetur doloremque minus adipisci quibusdam rerum dolores incidunt
+          corporis perspiciatis architecto consequatur obcaecati voluptas
+          tempore animi aut. Corrupti, exercitationem dolorum, veritatis eveniet
+          illum quae sit voluptatum quos perferendis quam, ipsa aliquam.
+        </p>
+
+        <div class="main-right__information">
+          <div class="information__repos">
+            <p class="information__repos_title">Repos</p>
+            <p class="information__repos_number">12</p>
+          </div>
+          <div class="information__followers">
+            <p class="information__followers_title">Followers</p>
+            <p class="information__followers_number">12</p>
+          </div>
+          <div class="information__following">
+            <p class="information__following_title">Following</p>
+            <p class="infomraiton__folowing_number">12</p>
+          </div>
+        </div>
+        <div class="main-right__contact"></div>
+      </section>
+    </main>
+    devfinder Light Dark Search GitHub username... Search Joined Repos Followers
+    Following
+  </body>
+</html>
